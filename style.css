@@ -1231,6 +1231,17 @@ footer .copyright {
     }
 }
 
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -1258,6 +1269,28 @@ footer .copyright {
 
 .animated-slide-down {
     animation: slide-down .4s backwards paused;   
+}
+
+/* Slide Left Animation */
+
+.animated-slide-left {
+    animation: slide-left .4s backwards paused;   
+}
+
+/* Slide Right Left Animation */
+
+.animated-blocks-slide-right-left > *:nth-child(odd) {
+    animation: slide-right .4s backwards paused;   
+}
+
+.animated-blocks-slide-right-left > *:nth-child(even) {
+    animation: slide-left .4s backwards paused;   
+}
+
+/* Slide Right Animation */
+
+.animated-slide-right {
+    animation: slide-right .4s backwards paused;   
 }
 
 /* Fade In Group Animation */
@@ -1289,6 +1322,8 @@ footer .copyright {
 /* Animation Status: Running */
 
 .animated-blocks.running > *,
-.animated-slide-down.running {
+.animated-slide-down.running,
+.animated-slide-left.running,
+.animated-slide-right.running {
     animation-play-state: running;
 }
