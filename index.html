@@ -38,10 +38,10 @@
         </div>
     </main>
 
-    <section class="top-products" id="top-products">
+    <section class="top-products animated-section" id="top-products">
         <div class="container">
-            <h2>Top Products</h2>
-            <div class="products">
+            <h2 class="animated-slide-down animated">Top Products</h2>
+            <div class="products animated-blocks-zoom-in animated-blocks animated">
                 <div class="product-item">
                     <img src="imgs/top-products1.png" alt="">
                     <div class="product-details">
@@ -100,24 +100,24 @@
         </div>
     </section>
 
-    <section class="first-order">
-        <div class="container">
+    <section class="first-order animated-section">
+        <div class="container animated-blocks-zoom-in animated-blocks animated">
             <h2>20% Off Your First Order</h2>
             <p>Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibenjgg.</p>
             <button>Learn More</button>
         </div>
     </section>
 
-    <section class="explore">
+    <section class="explore animated-section">
         <div class="container">
-            <h2>Explore More</h2>
-            <ul class="explore-menu">
-                <li><button>Cake</button></li>
-                <li><button>Muffins</button></li>
-                <li><button>Croissant</button></li>
-                <li><button>Bread</button></li>
-                <li><button>Tart</button></li>
-                <li><button>Favorite</button></li>
+            <h2 class="animated-slide-down animated">Explore More</h2>
+            <ul class="explore-menu animated-blocks-slide-right animated-blocks animated">
+                <li class="active" data-item="Cake"><button>Cake</button></li>
+                <li data-item="Muffins"><button>Muffins</button></li>
+                <li data-item="Croissant"><button>Croissant</button></li>
+                <li data-item="Bread"><button>Bread</button></li>
+                <li data-item="Tart"><button>Tart</button></li>
+                <li data-item="Favorite"><button>Favorite</button></li>
             </ul>
             <div class="explore-images">
                 <div class="img">
@@ -142,18 +142,18 @@
         </div>
     </section>
 
-    <section class="about-us" id="about">
-        <div class="container">
+    <section class="about-us animated-section" id="about">
+        <div class="container animated-blocks-zoom-in animated-blocks animated">
             <h2>About us</h2>
             <p>Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis.</p>
             <a href="pages/story.html">Read More</a>
         </div>
     </section>
 
-    <section class="featured-treats">
+    <section class="featured-treats animated-section">
         <div class="container">
-            <h2>Featured Treats</h2>
-            <div class="featured-treats-content">
+            <h2 class="animated animated-slide-down">Featured Treats</h2>
+            <div class="featured-treats-content animated-blocks-zoom-in animated-blocks animated">
                 <div class="featured-item">
                     <img src="imgs/featured1.png" alt="">
                     <div>
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="featured-item">
-                    <img src="imgs/featured3.png" alt="">
+                    <img src="imgs/featured3.jpg" alt="">
                     <div>
                         <h3>Brownies</h3>
                         <b>$8</b>
@@ -258,6 +258,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
